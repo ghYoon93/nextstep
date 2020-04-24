@@ -45,8 +45,6 @@ public class StringCalculatorTest {
     }
     @Test(expected = RuntimeException.class)
     public void 음수일_때_Exception(){
-        String text="//;\n1;2;-5";
-        int ans = cal.add(text);
-        assertEquals(6,ans);
+        cal.add("-1,2,3");
     }
 }
